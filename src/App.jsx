@@ -30,9 +30,8 @@ export default function App() {
                         <Route path='/reports' element={<Reports/>} />
                         <Route path='/employees' element={<Employees/>} />
                         <Route path='/departments' element={<Departments/>} />
-                        <Route path='*' element={<Navigate to='/login'/>} />
-
                     </Route>
+                    <Route path='*' element={<Navigate to='/login'/>} />
                 </Routes>
             </main>
             <footer className="container">

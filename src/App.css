@@ -1,8 +1,8 @@
 .app{
   text-align: center;
-  padding: 0px 10%;
+
 }
-.header{
+.header > h1{
   color : purple;
   
 }
