@@ -5,7 +5,7 @@ import Parse from "../services/parse";
 export default function MyNavBar() {
     return (
         <div>
-            <h1>navbar</h1>
+            <p>navbar</p>
         </div>
     )
 }
