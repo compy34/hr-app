@@ -8,7 +8,17 @@ console.log('PARSE_APP_ID', PARSE_APP_ID);
 console.log("PARSE_JS_KEY", PARSE_JS_KEY);
 console.log("PARSE_SERVER_URL", PARSE_SERVER_URL);
 
+
+
 Parse.initialize(PARSE_APP_ID, PARSE_JS_KEY);
 Parse.serverURL =PARSE_SERVER_URL;
+
+Parse.getServerHealth()
+    .then((res) => {
+        console.log("status: ",res.status); // Выведет "ok"
+    })
+    .catch((err) => {
+        console.error(err);
+    });
 
 export default Parse;
